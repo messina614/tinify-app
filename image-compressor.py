@@ -10,7 +10,7 @@ import time
 tinify.key = os.getenv("TINIFY_API_KEY")
 
 # Specify the folder to monitor (use an environment variable or placeholder)
-folder_path = os.getenv("FOLDER_PATH", "/path/to/your/folder")  # Replace with the path to your folder or set as an environment variable
+folder_path = os.getenv("IMAGE_COMPRESSOR_FOLDER_PATH", "/path/to/your/folder")  # Replace with the path to your folder or set as an environment variable
 
 # Supported image extensions
 image_extensions = ['.png', '.jpg', '.jpeg']
