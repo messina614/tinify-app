@@ -6,11 +6,9 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import time
 
-# Load your Tinify API key from an environment variable
-tinify.key = os.getenv("TINIFY_API_KEY")
-
-# Specify the folder to monitor (use an environment variable or placeholder)
-folder_path = os.getenv("IMAGE_COMPRESSOR_FOLDER_PATH", "/path/to/your/folder")  # Replace with the path to your folder or set as an environment variable
+# Prompt the user for the Tinify API key and folder path
+tinify.key = input("Enter your Tinify API key: ")
+folder_path = input("Enter the path to the folder you want to monitor: ")
 
 # Supported image extensions
 image_extensions = ['.png', '.jpg', '.jpeg']
